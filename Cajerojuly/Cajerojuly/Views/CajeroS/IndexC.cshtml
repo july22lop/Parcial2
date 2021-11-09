@@ -1,0 +1,14 @@
+﻿@model Cajerojuly.Models.Cajero
+@{
+    ViewBag.Title = "IndexC";
+}
+
+<h2>CajeroS</h2>
+@using (Html.BeginForm("IndexC","CajeroS",FormMethod.Post))
+{
+
+    <label>Escriba el Monto</label>
+    @Html.TextBoxFor(Result => Result.Monto)
+    <input type="submit" class="btn btn-outline-secondary" />
+}
+
